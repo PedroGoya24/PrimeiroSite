@@ -1,0 +1,372 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.center{
+    max-width: 1100;
+    margin: 0 auto;
+    padding:0 2%;
+    display: flex;
+    flex-wrap: wrap;
+}
+/*header*/
+
+
+.menu-mobile{
+    display:none; 
+}
+.header{
+    /*background-color: green;*/
+    padding:17px 0;
+    border-bottom:1px solid rgb(200, 200, 200);
+    display: flex;
+}
+
+
+/*Div logo*/
+.logo{
+    /*background-color: aqua;*/
+    display: flex;
+    color: #444444;
+    text-decoration: none;
+
+}
+.logo img{
+    height: 45px;
+    width: 70px;
+    padding: 0% 0%;
+}
+
+.logo h2{
+    /*font-weight: normal;*/ 
+    font-size: 22px;
+    border:0 1px;
+    text-decoration: none;
+    transition: 0.3s;
+    padding: 2vh;
+    /*background-color: green;*/
+
+}
+
+.logo:hover{
+    color: rgb(63, 152, 160);
+    transition: 0.5s;
+}
+.link{
+    padding: 1px;
+    color: #16587b;
+    font-size: 16px;
+    text-decoration: none;
+    margin-right: 30px;
+    transition: 0.5s;
+}
+.link:hover{
+    color: #007bff;
+}
+.btn-menu{
+    background-color: #2580c2;
+    display: inline-block;
+    padding:6px 12px;
+    color: white;
+    border-radius:6px ;
+    text-decoration: none;
+}
+.btn-menu:hover{
+    background-color: #124265;
+    color: white;
+    transition: 0.5s;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 15vh;
+}
+
+.nav-list{
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li{
+    letter-spacing: 3px;
+    margin-left: 20px;
+}
+
+.mobile-menu{
+    display: none;
+    cursor: pointer;
+}
+.mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background-color: #444;
+    margin: 8px;
+    transition: 0.3s;
+
+}
+
+/*
+Section main
+*/
+section.main{
+    background-image: url('../img/Index/hero-bg.jpg');
+    padding: 70px 0;
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.btn-link{
+    background-color: #2580c2;
+    display: inline-block;
+    padding:8px 25px;
+    color: white;
+    border-radius:6px ;
+    font-size: 20px;
+    border: 0;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-link:hover{
+    background-color: #124265;
+    color: white;
+    transition: 1.0s;
+}
+
+.main_cta{
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+    
+}
+
+
+.main_cta h2{
+    color: #16587b;
+    font-size: 40px;
+}
+
+.main_cta p{
+    color: gray;
+    font-size: 17px;
+    margin: 10px 0;
+}
+
+.main_cta button{
+    background-color: #2580c2;
+    display: inline-block;
+    padding:8px 25px;
+    color: white;
+    border-radius:6px ;
+    font-size: 20px;
+    border: 0;
+    cursor: pointer;
+    
+}
+
+
+.diferenciais{
+    /*display: flex; 
+    flex-wrap: wrap;
+   */
+  /* background-color: #16587b;*/
+    align-items: center;
+    width: 100%;
+    
+}
+.diferencial-single{
+    border-radius: 10px;
+    background-color: rgb(254, 254, 254);
+    width: 100%;
+    /*margin-right: ;*/
+    padding: 50px 20px;    
+    text-align: center;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.diferencial-single i{
+    color: #124265;
+    font-size: 23px;
+}
+
+.diferencial-single h1{
+    color: #124265;
+    margin: 10px 0;
+    font-size: 20px;    
+}
+
+.diferencial-single p{
+    color: gray;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.form{
+    width: 100%;
+    max-width: 32rem;
+    font-size: 1.125rem;
+}
+
+.form label,
+.form input,
+.form textarea,
+.form button{
+    width: 100%;
+    display: block;
+}
+
+.form label{
+    color: #000;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+
+.form input,
+.form textarea{
+    font: inherit;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 0.01px solid;
+    border-radius: 8px;
+    transition: border-color,
+    box-shadow 0.2s;
+}
+
+.form textarea{
+    min-height: 13rem;
+    resize: vertical;
+}
+
+.form input:hover,
+.form input:focus,
+.form textarea:hover,
+.form textarea:focus{
+    outline: none;
+    border-color: #09d;
+    box-shadow: 0 0 0 1px #4dc8ff;
+}
+
+.form button{
+    background-color: #2580c2;
+    display: inline-block;
+    padding:6px 12px;
+    color: white;
+    border-radius:6px ;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.form button:hover{
+    background-color: #124265;
+    color: white;    
+}
+
+
+@media screen and (max-width: 930px){
+    .diferencial-single{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .diferencial-singleA{
+        width: 100%;
+        margin-bottom: 20px;
+    }    
+    .conteudo-sobre p{ width: 100%; margin: 20px 20px;}
+
+
+
+.diferencial-single{
+    border-radius: 10px;
+    background-color: rgb(254, 254, 254);
+    width: 100%;
+    /*margin-right: ;*/
+    padding: 50px 20px;    
+    text-align: center;
+}
+
+.diferencial-single i{
+    color: #124265;
+    font-size: 23px;
+}
+
+.diferencial-single h1{
+    color: #124265;
+    margin: 10px 0;
+    font-size: 20px;    
+}
+
+.diferencial-single p{
+    color: gray;
+    font-size: 16px;
+    line-height: 25px;
+}
+.nav-list{
+    position: absolute;
+    top: 15vh;
+    right: 0;
+    width: 50vw;
+    height: 92vh;
+    background: #444;
+    border-bottom:1px solid rgb(200, 200, 200);
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+}
+.nav-list li{
+    margin-left: 0;
+    opacity: 0;
+}
+.mobile-menu{
+    display: block;
+}
+.link{
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+    margin-right: 30px;
+    transition: 0.5s;
+}
+.link:hover{
+    color: rgb(131, 111, 111);
+}
+}
+
+.nav-list.active{
+transform: translateX(0);
+}
+
+@keyframes navLinkFade{
+from{
+    opacity: 0;
+    transform: translateX(50px);
+}
+to{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+}
+
+.mobile-menu.active .line1{
+transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2{
+opacity: 0;
+}
+
+.mobile-menu.active .line3{
+transform: rotate(45deg) translate(-6px, -6px);
+}

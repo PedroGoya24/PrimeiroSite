@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/fal.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <title>Resilience Corporation</title>
+</head>
+<body>
+    <header><!--header-->
+        <nav class="menu">
+            <a class="logo" href="index.html">
+                <img class = "img" src="img/Index/logo.jpg" alt="logo"> 
+                <h2>Resilience Corp.</h2> 
+            </a>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
+                <li><a class="link" href="index.html">Home</a></li>
+                <li><a class="link" href="Sobre.html">Sobre</a></li>
+                <li><a class="link"href="#">Fale Conosco</a></li>
+                <li><a class="link" href="contato.html">Contato</a></li>
+                <li><a class="btn-menu" href="paest.html">
+                    PAEST   
+                </a></li>
+            </ul>
+        </nav>
+    </header>
+    <script src="js/script.js"></script>
+
+    <section class="main">
+        <div class="center">
+            <div class="main_cta">
+                <h2>Fale Conosco</h2> <!--Titulo-->
+                <p>Nos envie uma mensagem                                </p> <!--Sub-titulo-->                            
+            </div>  
+
+            <div class="diferenciais">
+    
+                <div class="diferencial-single">
+                    <form class="form" action="https://formsubmit.co/resiliencecorp172@gmail.com"  method="POST" >
+                        <label for="Nome"> Nome </label>
+                            <input type="text" name="Nome" required />   
+
+                        <label for="E-mail">E-mail</label>
+                            <input type="email" name="E-mail" required />
+
+                        <label for="message">Mensagem</label>
+                            <textarea name="message" placeholder="Escreva Aqui" required></textarea>
+                            
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/Obrigado.html" />
+                        <button type="submit" class="btn_msg"> Enviar</button>
+                    </form>
+                </div>                
+            </div>
+    </section>
+
+
+</body>
+</html>
